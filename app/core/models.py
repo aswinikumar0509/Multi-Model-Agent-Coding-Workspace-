@@ -16,6 +16,13 @@ class FolderNode(BaseModel):
     root_path:str
     root:FolderNode
 
+FolderNode.update_forward_refs()
+
+class Workspace(BaseModel):
+    id: str
+    name: str
+    root_path: str
+    root: FolderNode
 class WorkspaceCreate(BaseModel):
     name:str
     root_path:str
@@ -38,4 +45,3 @@ class FileInfo(BaseModel):
     is_folder:bool
     language:LanguageId|None=None
     content:Optional[str]=None
-    
