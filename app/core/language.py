@@ -5,7 +5,7 @@ from .models import LanguageId
 
 class LanguageMode(BaseModel):
     id:LanguageId
-    extentions:List[str]
+    extensions: List[str]
     comment_line:str
 
 LANGUAGES: Dict[LanguageId,LanguageMode] = {

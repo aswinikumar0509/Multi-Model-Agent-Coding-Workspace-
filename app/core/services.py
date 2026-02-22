@@ -44,7 +44,7 @@ def create_workspace(data:WorkspaceCreate)->Workspace:
     storage.add_workspace(ws)
     return ws
 
-def list_workspace(ws_id:str)-> list[Workspace]:
+def list_workspaces(ws_id:str)-> list[Workspace]:
     return storage.list_workspaces
 
 def get_workspace(ws_id:str)->list[Workspace]:

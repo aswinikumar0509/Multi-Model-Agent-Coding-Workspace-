@@ -3,7 +3,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import workspaces, files, languages
+from api import workspaces, files, languages
 
 app = FastAPI(title="Mini VS Code Backend")
 
